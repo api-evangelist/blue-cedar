@@ -1,0 +1,23 @@
+generated: '2026-09-29'
+method: probed
+source: live DNS/TLS/HTTP probes of apis.yml + OpenAPI hosts
+hosts:
+- host: www.bluecedar.com
+  https: true
+  tls_version: TLSv1.3
+  cert_expires: Dec 26 00:02:39 2026 GMT
+  hsts: true
+  hsts_max_age: 31536000
+domains:
+- domain: bluecedar.com
+  dnssec: true
+  caa:
+  - 0 issue "pki.goog"
+  - 0 issue "sectigo.com"
+  - 0 issuewild "amazon.com"
+  - 0 iodef "mailto:caa@bluecedar.com"
+  - 0 issue "amazon.com"
+  - 0 issue "letsencrypt.org"
+  spf: true
+  dmarc: true
+  dmarc_policy: reject

@@ -1,23 +1,81 @@
 aid: blue-cedar
+
 name: Blue Cedar
-description: 'Blue Cedar is a company surfaced via the API Evangelist harvest backlog (source: secondary-market)
-  and added to the network as a stub for full-pipeline profiling.'
+
+image: https://www.bluecedar.com/hubfs/BC2020/blue_cedar_facebook_og_image.jpg
+
+description: Blue Cedar provides intelligent mobile app security solutions, enabling enterprises to protect device integrity, prevent data loss,
+  and safeguard intellectual property. Their platform offers self‑defending mobile applications, comprehensive security policies, and compliance
+  tools for a mobile‑first universe.
+
 url: https://raw.githubusercontent.com/api-evangelist/blue-cedar/refs/heads/main/apis.yml
+
 x-type: company
+
 x-source: harvest:secondary-market
-x-tier: stub
-x-tier-reason: harvest
+
+x-tier: profiled
+x-tier-reason: enrichment pass 2026-09-29 (modular-v1; was harvest)
+
 specificationVersion: '0.20'
+
 created: '2026-09-29'
+
 modified: '2026-09-29'
+
 tags:
 - Company
-apis: []
+- MobileSecurity
+- Enterprise
+- AppProtection
+- Compliance
+
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+
 common:
+- type: Documentation
+  url: https://api-docs.bluecedar.com/
+- type: Hosts
+  url: hosts/blue-cedar-hosts.yml
+- type: Vendors
+  url: vendors/blue-cedar-vendors.yml
+- type: ChangeLog
+  url: https://apollo.bluecedar.com/platform/release-notes
+- type: DomainSecurity
+  url: security/blue-cedar-domain-security.yml
 - type: Website
-  url: https://www.nasdaqprivatemarket.com/
+  url: https://www.bluecedar.com/
+- type: GettingStarted
+  url: https://www.bluecedar.com/sign-up
+- type: Support
+  url: https://www.bluecedar.com/support
+- type: Blog
+  url: https://www.bluecedar.com/blog
+- type: PrivacyPolicy
+  url: https://www.bluecedar.com/privacy-policy
+
+apis:
+- name: Blue Cedar API
+  description: API for Blue Cedar mobile security platform
+  humanURL: https://www.bluecedar.com
+  baseURL: null
+  aid: blue-cedar:blue-cedar-api
+
+x-coverage:
+  state: unreadable
+  reason: js-rendered-docs
+  detail: The developer documentation pages return JavaScript-rendered shells, preventing machine‑readable contract discovery.
+  evidence:
+  - url: https://www.bluecedar.com/product-documentation
+    status: 404
+  checked: '2026-09-29'
+x-enrichment:
+  date: '2026-09-29'
+  status: enriched
+  artifacts_added: 6
+  pass: modular-v1
+  engine: identity=local,contract=local,surfaces=local,docs=local,regulatory=local

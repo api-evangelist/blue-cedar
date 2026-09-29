@@ -1,0 +1,49 @@
+generated: '2026-09-29'
+source: https://www.bluecedar.com/gdpr-privacy-policy
+method: probed
+signals:
+  data_subject_request:
+    - source: https://www.bluecedar.com/gdpr-privacy-policy
+      http_status: 200
+      fetched: /tmp/gdpr.html
+      quote: "The right of access: you have the right to request a copy of the information that we hold about you."
+      section: "Personal Data Rights"
+      note: "Provides data subject access right."
+    - source: https://www.bluecedar.com/gdpr-privacy-policy
+      http_status: 200
+      fetched: /tmp/gdpr.html
+      quote: "The right of rectification: you have the right to correct data that we hold about you that is inaccurate or incomplete."
+      section: "Personal Data Rights"
+      note: "Provides data subject rectification right."
+    - source: https://www.bluecedar.com/gdpr-privacy-policy
+      http_status: 200
+      fetched: /tmp/gdpr.html
+      quote: "The right to be forgotten: in certain circumstances, you can ask for us to erase the data we hold about you from our records."
+      section: "Personal Data Rights"
+      note: "Provides data subject erasure right."
+    - source: https://www.bluecedar.com/gdpr-privacy-policy
+      http_status: 200
+      fetched: /tmp/gdpr.html
+      quote: "The right of the restriction of processing: where certain conditions apply, you have the right to restrict the processing."
+      section: "Personal Data Rights"
+      note: "Provides data subject restriction right."
+    - source: https://www.bluecedar.com/gdpr-privacy-policy
+      http_status: 200
+      fetched: /tmp/gdpr.html
+      quote: "The right to object: you have the right to object to certain types of processing such as direct marketing and automated processing, including profiling."
+      section: "Personal Data Rights"
+      note: "Provides data subject objection right."
+  data_retention:
+    - source: https://www.bluecedar.com/gdpr-privacy-policy
+      http_status: 200
+      fetched: /tmp/gdpr.html
+      quote: "We govern data retention periods according to specific business-sector legal requirements and stated practices, as well as the type of data and the context in which we collected the data provided such retention does not infringe on data protection laws."
+      section: "Data Retention"
+      note: "Describes retention policy."
+  data_residency:
+    - source: https://www.bluecedar.com/privacy-policy
+      http_status: 200
+      fetched: /tmp/privacy.html
+      quote: "This Privacy Policy governs the manner in which Blue Cedar Networks (\"Blue Cedar\") collects, uses, maintains, and discloses information collected from users (\"User\" or \"Users\") of the https://www.bluecedar.com website (the \"Site\") located in the US and Non-European countries."
+      section: null
+      note: "Specifies data residency for US and Non-European customers."

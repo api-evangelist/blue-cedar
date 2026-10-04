@@ -23,7 +23,16 @@ created: '2026-09-29'
 
 modified: '2026-09-29'
 
+x-docs-platform: postman
+x-docs-platform-confidence: high
+x-docs-platform-checked: 2026-10-03
 tags:
+- Company
+- Mobile Security
+- Enterprise
+- App Protection
+- Compliance
+tags_raw:
 - Company
 - MobileSecurity
 - Enterprise
